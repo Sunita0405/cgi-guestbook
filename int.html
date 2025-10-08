@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Guestbook</title>
+    <link rel="stylesheet" href="intstyle.css">
+</head>
+<body>
+    <h1>Welcome to Our Guestbook</h1>
+
+    <div class="form-container">
+        <form method="POST" action="/cgi-bin/guestbook.py">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Write something..." required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <h2>Guestbook Entries</h2>
+    <div class="guestbook-entries">
+    </div>
+</body>
+</html>
